@@ -3,7 +3,7 @@ MAINTAINER julien BONACHERA <julien@bonachera.fr>
 RUN useradd -r unifi
 VOLUME /opt/UniFi/data
 CMD java -jar lib/ace.jar start
-ENV VERSION=5.0.7
+ENV VERSION=5.3.4-2f37aba2
 RUN dnf install -y curl mongodb-server java-1.8.0-openjdk-headless && \
     curl -sLo /opt/ubnt.zip  http://dl.ubnt.com/unifi/${VERSION}/UniFi.unix.zip &&\
     python3 -m zipfile -e /opt/ubnt.zip /opt && \
