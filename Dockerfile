@@ -4,7 +4,7 @@ RUN useradd -r unifi
 CMD java -jar lib/ace.jar start
 RUN pacman -S --needed --noconfirm mongodb jdk8-openjdk python && \
     rm -rf /var/cache/pacman/*
-ENV VERSION=5.7.7-6cd27c9088
+ENV VERSION=5.7.19-84cd139873
 RUN curl -sLo /opt/ubnt.zip  http://dl.ubnt.com/unifi/${VERSION}/UniFi.unix.zip &&\
     python3 -m zipfile -e /opt/ubnt.zip /opt && \
     rm -f /opt/ubnt.zip && \
