@@ -1,3 +1,0 @@
-#!/bin/bash
-exec /usr/sbin/mongod --dbpath /opt/UniFi/data/db --port 27117 --unixSocketPrefix /opt/UniFi/run --logappend --logpath /opt/UniFi/logs/mongod.log --bind_ip 127.0.0.1
-
